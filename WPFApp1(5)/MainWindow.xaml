@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFApp1_5_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp1_8_"
+        mc:Ignorable="d"
+        Title="Практическая работа №1" Height="347" Width="447" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF009752"/>
+            <GradientStop Color="#FF424242" Offset="1"/>
+            <GradientStop Color="#FF984FE0" Offset="0.343"/>
+            <GradientStop Color="#FFDEBA8F" Offset="0.612"/>
+            <GradientStop Color="#FF8B00FF" Offset="0.822"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Menu VerticalAlignment="Top" Background="{x:Null}" Foreground="White">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" x:Name="CloseProgram" Click="CloseProgram_Click"/>
+            </MenuItem>
+            <MenuItem Header="Справка">
+                <MenuItem Header="Задание" x:Name="taskShowed" Click="taskShowed_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox x:Name="NumK" HorizontalAlignment="Left" Margin="151,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="NumK_TextChanged"/>
+        <TextBox IsReadOnly="True" x:Name="SumOfNum" HorizontalAlignment="Left" Margin="275,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AllowDrop="True"/>
+        <TextBox IsReadOnly="True" x:Name="GenNums" HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+
+        <Label Content="Сгенер.числа" HorizontalAlignment="Left" Margin="27,78,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <Label Content="Сумма чисел" HorizontalAlignment="Left" Margin="292,78,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <Label Content="Число K" HorizontalAlignment="Left" Margin="182,214,0,0" VerticalAlignment="Top" Width="58" Foreground="White"/>
+        <TextBox x:Name="CountGenNums" HorizontalAlignment="Left" Margin="144,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Кол-во сгенер.чисел" HorizontalAlignment="Left" Margin="142,34,0,0" VerticalAlignment="Top" Width="124" Foreground="White"/>
+
+    </Grid>
+</Window>
