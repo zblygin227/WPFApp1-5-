@@ -23,7 +23,7 @@ namespace WPFApp1_5_
         {
             MessageBox.Show("Разработчки: \nЗадание: Вычислить сумму целых случайных чисел, распределенных в диапазоне от -7 до 3, пока эта сумма не превышает некоторого числа K. Вывести на экран сгенерированные числа, значение суммы, и количество сгенерированных чисел.", "Номер вариант №8");
         }
-
+        //комментарий
         private void NumK_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             int.TryParse(NumK.Text, out int K);
